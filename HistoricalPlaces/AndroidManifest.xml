@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ftfl.mylastvisiting"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.ftfl.historicalplaces.splash.SplashActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ftfl.historicalplaces.AddHistoricalActivity"
+            android:label="@string/add_place" >
+        </activity>
+        <activity
+            android:name="com.ftfl.historicalplaces.HistoricalListActivity"
+            android:label="@string/place_list" >
+        </activity>
+        <activity
+            android:name="com.ftfl.historicalplaces.HistoricalViewActivity"
+            android:label="@string/place_viewed" >
+        </activity>
+        <activity
+            android:name="com.ftfl.historicalplace.map.ShowMapActivity"
+            android:label="@string/title_activity_show_map" >
+        </activity>
+    </application>
+
+</manifest>
